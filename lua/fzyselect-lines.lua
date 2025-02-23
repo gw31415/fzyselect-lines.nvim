@@ -134,7 +134,7 @@ return {
 			once = true,
 		})
 		require 'fzyselect'.start(vim.api.nvim_buf_get_lines(0, 0, -1, true),
-			{ prompt = 'fuzzy search: <Enter> to jump' },
+			{ prompt = 'fzyselect-lines' },
 			function(_, i)
 				if i then
 					vim.api.nvim_win_set_cursor(winid, { i, col })
